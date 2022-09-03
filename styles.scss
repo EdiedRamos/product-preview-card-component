@@ -99,16 +99,24 @@ body {
 
 @media (min-width: 768px) {
   .card-container {
+    margin: 2rem;
     flex-direction: row;
-    width: 500px;
+    width: 50%;
+    height: 420px;
   }
   .card-header {
-    height: 400px;
-    width: 1000px;
+    width: 50%;
+    height: 100%;
     background-image: url("./assets/images/image-product-desktop.jpg");
     background-size: cover;
     border-top-left-radius: $border-radius;
     border-top-right-radius: 0;
     border-bottom-left-radius: $border-radius;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
   }
 }
